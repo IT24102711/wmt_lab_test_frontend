@@ -37,7 +37,7 @@ function HomePage() {
     <section>
       <div className="hero">
         <h1>Item Details</h1>
-        <p>View, manage, edit, and remove items from the inventory.</p>
+        <p>View, manage, edit, and remove items from the inventory. Brand Name is now included for each item.</p>
       </div>
 
       {loading ? (

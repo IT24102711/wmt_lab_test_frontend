@@ -9,7 +9,6 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       description: "",
       imageUrl: "",
       brandName: "",
-      serialNumber: "",
     }
   );
 
@@ -33,9 +32,11 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <label>Item Name</label>
       <input name="name" value={formData.name} onChange={handleChange} required />
 
-      <label>Category</label>
-      <input name="category" value={formData.category} onChange={handleChange} required />
+  <label>Category</label>
+  <input name="category" value={formData.category} onChange={handleChange} required />
 
+  <label>Brand Name</label>
+  <input name="brandName" value={formData.brandName} onChange={handleChange} required />
       <label>Price</label>
       <input
         type="number"
@@ -57,12 +58,15 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
 
+<<<<<<< HEAD
       <label>Brand Name</label>
       <input name="brandName" value={formData.brandName} onChange={handleChange} required />
 
       <label>Serial Number</label>
       <input name="serialNumber" value={formData.serialNumber} onChange={handleChange} required />
 
+=======
+>>>>>>> 07ede63 (Initial frontend commit)
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
   );
